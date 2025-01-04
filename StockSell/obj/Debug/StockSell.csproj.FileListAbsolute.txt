@@ -1,0 +1,12 @@
+E:\Programs\StockSell\StockSell\bin\Debug\StockSell.exe.config
+E:\Programs\StockSell\StockSell\bin\Debug\StockSell.exe
+E:\Programs\StockSell\StockSell\bin\Debug\StockSell.pdb
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.csproj.AssemblyReference.cache
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.Cliente.resources
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.Properties.Resources.resources
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.StockSellHub.resources
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.csproj.GenerateResource.cache
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.csproj.CoreCompileInputs.cache
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.exe
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.pdb
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.Vendas.resources
