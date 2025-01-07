@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace StockSell
 {
     public partial class StockSellHub : Form
     {
+        static string stringConnection = "SERVER=localhost; PORT = 3306; user id=root; PWD=0; DATABASE=StockSell ";
+        private MySqlConnection con = new MySqlConnection(stringConnection);
         public StockSellHub()
         {
             InitializeComponent();
