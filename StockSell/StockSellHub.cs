@@ -14,16 +14,19 @@ namespace StockSell
 {
     public partial class StockSellHub : Form
     {
-        static string stringConnection = "SERVER=localhost; PORT = 3306; user id=root; PWD=0; DATABASE=StockSell ";
-        private MySqlConnection con = new MySqlConnection(stringConnection);
+        static string stringConnection = "server=localhost; port=3306; user id=root; password=0";
+        private MySqlConnection conn = new MySqlConnection(stringConnection);
+        //database StockSellMaster
         public StockSellHub()
         {
             InitializeComponent();
+            conn.Open();
+            
         }
 
         private void buttonCliente_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente(this);
+            Cliente cliente = new Cliente(this, conn);
             cliente.Show();
         }
 
@@ -38,5 +41,28 @@ namespace StockSell
             Produtos produtos = new Produtos(this);
             produtos.Show();
         }
+
+        private void StockSellHub_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Close();
+            MessageBox.Show("conexão fechada");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd = new MySqlCommand("using StockSellMaster;" +
+                "create table clientes", conn);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Database criada");
+            }
+            catch
+            {
+                MessageBox.Show("n");
+            }
+        }
+
+        
     }
 }

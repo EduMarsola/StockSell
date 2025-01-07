@@ -31,6 +31,7 @@
             this.buttonCliente = new System.Windows.Forms.Button();
             this.buttonVenda = new System.Windows.Forms.Button();
             this.buttonProdutos = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCliente
@@ -40,7 +41,7 @@
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCliente.Location = new System.Drawing.Point(60, 60);
-            this.buttonCliente.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.buttonCliente.Margin = new System.Windows.Forms.Padding(0);
             this.buttonCliente.Name = "buttonCliente";
             this.buttonCliente.Size = new System.Drawing.Size(180, 60);
             this.buttonCliente.TabIndex = 0;
@@ -78,12 +79,23 @@
             this.buttonProdutos.UseVisualStyleBackColor = false;
             this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(217, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StockSellHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
             this.ClientSize = new System.Drawing.Size(304, 389);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonProdutos);
             this.Controls.Add(this.buttonVenda);
             this.Controls.Add(this.buttonCliente);
@@ -91,6 +103,7 @@
             this.Name = "StockSellHub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockSell Hub";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StockSellHub_FormClosing);
             this.ResumeLayout(false);
 
         }
@@ -100,5 +113,6 @@
         private System.Windows.Forms.Button buttonCliente;
         private System.Windows.Forms.Button buttonVenda;
         private System.Windows.Forms.Button buttonProdutos;
+        private System.Windows.Forms.Button button1;
     }
 }

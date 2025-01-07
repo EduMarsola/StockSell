@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\Programs\\StockSell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|E:\\Programs\\StockSell\\stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,16 +11,12 @@
       "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|E:\\Programs\\StockSell\\stocksell\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|E:\\Programs\\StockSell\\stocksell\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|E:\\Programs\\StockSell\\stocksell\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Cliente.cs",
+              "RelativeDocumentMoniker": "StockSell\\Cliente.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\Cliente.cs",
+              "RelativeToolTip": "StockSell\\Cliente.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T00:50:00.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Cliente.cs [Design]",
               "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Cliente.cs",
               "RelativeDocumentMoniker": "StockSell\\Cliente.cs",
@@ -46,37 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Produtos.cs [Design]",
-              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Produtos.cs",
-              "RelativeDocumentMoniker": "StockSell\\Produtos.cs",
-              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\Produtos.cs [Design]",
-              "RelativeToolTip": "StockSell\\Produtos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T01:32:05.321Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vendas.cs [Design]",
-              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Vendas.cs",
-              "RelativeDocumentMoniker": "StockSell\\Vendas.cs",
-              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\Vendas.cs [Design]",
-              "RelativeToolTip": "StockSell\\Vendas.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T01:21:17.682Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StockSellHub.cs",
               "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\StockSellHub.cs",
               "RelativeDocumentMoniker": "StockSell\\StockSellHub.cs",
               "ToolTip": "E:\\Programs\\StockSell\\StockSell\\StockSellHub.cs",
               "RelativeToolTip": "StockSell\\StockSellHub.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T01:17:55.715Z",
               "EditorCaption": ""
