@@ -104,6 +104,7 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControleDoBanco.cs" />
     <Compile Include="Produtos.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,23 +30,23 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
             this.buttonCancelarCadastro = new System.Windows.Forms.Button();
             this.textBoxNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.buttonCadastrarCadastro = new System.Windows.Forms.Button();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.buttonConsultar = new System.Windows.Forms.Button();
+            this.buttonCancelarConsulta = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -67,10 +67,10 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.maskedTextBox1);
+            this.tabPage1.Controls.Add(this.maskedTextBoxCPF);
             this.tabPage1.Controls.Add(this.buttonCancelarCadastro);
             this.tabPage1.Controls.Add(this.textBoxNascimento);
-            this.tabPage1.Controls.Add(this.buttonCadastrarCadastro);
+            this.tabPage1.Controls.Add(this.buttonCadastrar);
             this.tabPage1.Controls.Add(this.textBoxNome);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
@@ -82,6 +82,30 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label5.Location = new System.Drawing.Point(11, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 25);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "CPF";
+            // 
+            // maskedTextBoxCPF
+            // 
+            this.maskedTextBoxCPF.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.maskedTextBoxCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBoxCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(71, 101);
+            this.maskedTextBoxCPF.Mask = "000.000.000-00";
+            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
+            this.maskedTextBoxCPF.Size = new System.Drawing.Size(169, 24);
+            this.maskedTextBoxCPF.TabIndex = 25;
+            this.maskedTextBoxCPF.Text = "12312312322";
+            this.maskedTextBoxCPF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBoxCPF.ValidatingType = typeof(int);
             // 
             // buttonCancelarCadastro
             // 
@@ -111,18 +135,19 @@
             this.textBoxNascimento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxNascimento.ValidatingType = typeof(System.DateTime);
             // 
-            // buttonCadastrarCadastro
+            // buttonCadastrar
             // 
-            this.buttonCadastrarCadastro.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.buttonCadastrarCadastro.FlatAppearance.BorderSize = 0;
-            this.buttonCadastrarCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrarCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCadastrarCadastro.Location = new System.Drawing.Point(698, 382);
-            this.buttonCadastrarCadastro.Name = "buttonCadastrarCadastro";
-            this.buttonCadastrarCadastro.Size = new System.Drawing.Size(123, 50);
-            this.buttonCadastrarCadastro.TabIndex = 17;
-            this.buttonCadastrarCadastro.Text = "Cadastrar";
-            this.buttonCadastrarCadastro.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonCadastrar.FlatAppearance.BorderSize = 0;
+            this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastrar.Location = new System.Drawing.Point(698, 382);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(123, 50);
+            this.buttonCadastrar.TabIndex = 17;
+            this.buttonCadastrar.Text = "Cadastrar";
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrarCadastro_Click);
             // 
             // textBoxNome
             // 
@@ -160,8 +185,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.buttonConsultar);
+            this.tabPage2.Controls.Add(this.buttonCancelarConsulta);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.maskedTextBox3);
             this.tabPage2.Controls.Add(this.maskedTextBox2);
@@ -176,6 +201,56 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consulta";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // buttonConsultar
+            // 
+            this.buttonConsultar.BackColor = System.Drawing.Color.DarkCyan;
+            this.buttonConsultar.FlatAppearance.BorderSize = 0;
+            this.buttonConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConsultar.Location = new System.Drawing.Point(698, 382);
+            this.buttonConsultar.Name = "buttonConsultar";
+            this.buttonConsultar.Size = new System.Drawing.Size(123, 50);
+            this.buttonConsultar.TabIndex = 30;
+            this.buttonConsultar.Text = "Consultar";
+            this.buttonConsultar.UseVisualStyleBackColor = false;
+            // 
+            // buttonCancelarConsulta
+            // 
+            this.buttonCancelarConsulta.BackColor = System.Drawing.Color.IndianRed;
+            this.buttonCancelarConsulta.FlatAppearance.BorderSize = 0;
+            this.buttonCancelarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelarConsulta.Location = new System.Drawing.Point(569, 382);
+            this.buttonCancelarConsulta.Name = "buttonCancelarConsulta";
+            this.buttonCancelarConsulta.Size = new System.Drawing.Size(123, 50);
+            this.buttonCancelarConsulta.TabIndex = 29;
+            this.buttonCancelarConsulta.Text = "Cancelar";
+            this.buttonCancelarConsulta.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label6.Location = new System.Drawing.Point(11, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 25);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "CPF";
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.maskedTextBox3.Location = new System.Drawing.Point(71, 101);
+            this.maskedTextBox3.Mask = "000.000.000-00";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(169, 24);
+            this.maskedTextBox3.TabIndex = 27;
+            this.maskedTextBox3.Text = "12312312322";
+            this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maskedTextBox3.ValidatingType = typeof(int);
             // 
             // maskedTextBox2
             // 
@@ -225,80 +300,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Nome";
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(71, 101);
-            this.maskedTextBox1.Mask = "000.000.000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(169, 24);
-            this.maskedTextBox1.TabIndex = 25;
-            this.maskedTextBox1.Text = "12312312322";
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label5.Location = new System.Drawing.Point(11, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 25);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "CPF";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.label6.Location = new System.Drawing.Point(11, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 25);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "CPF";
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.maskedTextBox3.Location = new System.Drawing.Point(71, 101);
-            this.maskedTextBox3.Mask = "000.000.000-00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(169, 24);
-            this.maskedTextBox3.TabIndex = 27;
-            this.maskedTextBox3.Text = "12312312322";
-            this.maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox3.ValidatingType = typeof(int);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(569, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 50);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(698, 382);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 50);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +325,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button buttonCancelarCadastro;
         private System.Windows.Forms.MaskedTextBox textBoxNascimento;
-        private System.Windows.Forms.Button buttonCadastrarCadastro;
+        private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -332,11 +333,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxCPF;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonConsultar;
+        private System.Windows.Forms.Button buttonCancelarConsulta;
     }
 }
