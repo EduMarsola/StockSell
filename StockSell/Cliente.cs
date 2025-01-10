@@ -33,9 +33,9 @@ namespace StockSell
             if(ChecarDados())
             {
                 controle.AbrirConexao();
-                controle.MudarComando("insert into clientes" +
-                    "CPF, NomeCompleto, DataNascimento" +
-                    "values "+maskedTextBoxCPF.Text+", "+textBoxNome.Text+", "+textBoxNascimento.Text+";");
+                controle.MudarComando("insert into clientes " +
+                    "(CPF, NomeCompleto, DataNascimento) " +
+                    "values ("+maskedTextBoxCPF.Text+", "+textBoxNome.Text+", "+textBoxNascimento.Text+");");
                 try { controle.ExecultarFechar(); }
                 catch (Exception ex) { controle.FecharConexao(); MessageBox.Show("Erro ao cadastrar" + ex); };
                 
@@ -59,6 +59,13 @@ namespace StockSell
         private bool CPFValidado()
         {
             return true;
+        }
+
+        private void buttonConsultar_Click(object sender, EventArgs e)
+        {
+            try { controle.AbrirConexao();  MySqlDataReader rd = controle.ExecultarReceber("select * from Cliente"); }
+            catch(Exception ex) { MessageBox.Show(ex.Message); } 
+
         }
     }
 }

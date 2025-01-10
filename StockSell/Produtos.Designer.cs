@@ -32,8 +32,12 @@
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.maskedTextBoxQuatidade = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxCodigo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonCancelarConsulta = new System.Windows.Forms.Button();
+            this.buttonCadastro = new System.Windows.Forms.Button();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -41,10 +45,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,12 +90,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.maskedTextBox1);
+            this.tabPage1.Controls.Add(this.maskedTextBoxQuatidade);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.textBoxCodigo);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.buttonCancelarConsulta);
+            this.tabPage1.Controls.Add(this.buttonCadastro);
             this.tabPage1.Controls.Add(this.textBoxNome);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,31 +107,81 @@
             this.tabPage1.Text = "Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // maskedTextBoxQuatidade
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(569, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 50);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.maskedTextBoxQuatidade.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.maskedTextBoxQuatidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.maskedTextBoxQuatidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.maskedTextBoxQuatidade.Location = new System.Drawing.Point(140, 101);
+            this.maskedTextBoxQuatidade.Mask = "00000000000000000000000000000";
+            this.maskedTextBoxQuatidade.Name = "maskedTextBoxQuatidade";
+            this.maskedTextBoxQuatidade.Size = new System.Drawing.Size(593, 24);
+            this.maskedTextBoxQuatidade.TabIndex = 24;
+            this.maskedTextBoxQuatidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maskedTextBoxQuatidade.ValidatingType = typeof(int);
             // 
-            // button2
+            // label5
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(698, 382);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 50);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Cadastrar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label5.AutoSize = true;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 25);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Quantidade";
+            // 
+            // textBoxCodigo
+            // 
+            this.textBoxCodigo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCodigo.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxCodigo.Location = new System.Drawing.Point(103, 14);
+            this.textBoxCodigo.Name = "textBoxCodigo";
+            this.textBoxCodigo.Size = new System.Drawing.Size(630, 24);
+            this.textBoxCodigo.TabIndex = 21;
+            this.textBoxCodigo.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 25);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Código ";
+            // 
+            // buttonCancelarConsulta
+            // 
+            this.buttonCancelarConsulta.BackColor = System.Drawing.Color.IndianRed;
+            this.buttonCancelarConsulta.FlatAppearance.BorderSize = 0;
+            this.buttonCancelarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelarConsulta.Location = new System.Drawing.Point(569, 382);
+            this.buttonCancelarConsulta.Name = "buttonCancelarConsulta";
+            this.buttonCancelarConsulta.Size = new System.Drawing.Size(123, 50);
+            this.buttonCancelarConsulta.TabIndex = 19;
+            this.buttonCancelarConsulta.Text = "Cancelar";
+            this.buttonCancelarConsulta.UseVisualStyleBackColor = false;
+            this.buttonCancelarConsulta.Click += new System.EventHandler(this.buttonCancelarConsulta_Click);
+            // 
+            // buttonCadastro
+            // 
+            this.buttonCadastro.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.buttonCadastro.FlatAppearance.BorderSize = 0;
+            this.buttonCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastro.Location = new System.Drawing.Point(698, 382);
+            this.buttonCadastro.Name = "buttonCadastro";
+            this.buttonCadastro.Size = new System.Drawing.Size(123, 50);
+            this.buttonCadastro.TabIndex = 17;
+            this.buttonCadastro.Text = "Cadastrar";
+            this.buttonCadastro.UseVisualStyleBackColor = false;
+            this.buttonCadastro.Click += new System.EventHandler(this.buttonCadastro_Click);
             // 
             // textBoxNome
             // 
@@ -219,54 +269,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Nome";
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(103, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(630, 24);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "aaaaaaaaaaaaaaaaaaaaaa";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Código ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 25);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Quantidade";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(140, 101);
-            this.maskedTextBox1.Mask = "00000000000000000000000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(593, 24);
-            this.maskedTextBox1.TabIndex = 24;
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,8 +296,8 @@
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonCancelarConsulta;
+        private System.Windows.Forms.Button buttonCadastro;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -303,9 +305,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCodigo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxQuatidade;
         private System.Windows.Forms.Label label5;
     }
 }

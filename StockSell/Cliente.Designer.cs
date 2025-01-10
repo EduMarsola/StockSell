@@ -204,7 +204,7 @@
             // 
             // buttonConsultar
             // 
-            this.buttonConsultar.BackColor = System.Drawing.Color.DarkCyan;
+            this.buttonConsultar.BackColor = System.Drawing.Color.MediumTurquoise;
             this.buttonConsultar.FlatAppearance.BorderSize = 0;
             this.buttonConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,6 +214,7 @@
             this.buttonConsultar.TabIndex = 30;
             this.buttonConsultar.Text = "Consultar";
             this.buttonConsultar.UseVisualStyleBackColor = false;
+            this.buttonConsultar.Click += new System.EventHandler(this.buttonConsultar_Click);
             // 
             // buttonCancelarConsulta
             // 

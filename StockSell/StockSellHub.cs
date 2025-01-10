@@ -17,7 +17,7 @@ namespace StockSell
         ControleDoBanco controle = new ControleDoBanco();
         //database StockSellMaster
         /*tabela cliente
-         * create table clientes(
+         * create table Cliente(
             CPF varchar(11) not null unique,
             NomeCompleto text,
             DataNascimento date,
@@ -25,8 +25,8 @@ namespace StockSell
             );
         */
 
-        /*tabela venda
-           create table vendas(
+        /*tabela Venda
+           create table Venda(
             idVenda integer auto_increment,
             idProduto integer not null,
             qtd integer not null,
@@ -36,7 +36,7 @@ namespace StockSell
          */
 
         /*tabela Produto
-           create table produtos(
+           create table Produto(
             idProduto integer not null,
             nomeProduto varchar(50),
             qtd integer not null,
@@ -65,7 +65,7 @@ namespace StockSell
 
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
-            Produtos produtos = new Produtos(this);
+            Produtos produtos = new Produtos(this, controle);
             produtos.Show();
         }
 
@@ -77,7 +77,13 @@ namespace StockSell
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                controle.AbrirConexao();
+                controle.MudarComando("");
+                controle.ExecultarFechar();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
     
    
         }

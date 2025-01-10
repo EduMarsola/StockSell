@@ -17,7 +17,7 @@ namespace StockSell
 
         public void MudarComando(string novoComando)
         {
-            command = new MySqlCommand(novoComando);
+            command = new MySqlCommand(novoComando, conn);
         }
         public void AbrirConexao() { conn.Open(); }
         public void FecharConexao() { conn.Close(); }
@@ -30,9 +30,10 @@ namespace StockSell
             command.ExecuteNonQuery();
             FecharConexao();
         }
-        public MySqlDataReader Execultar(MySqlDataReader leitor)
+        public MySqlDataReader ExecultarReceber(string comando)
         {
-            return command.ExecuteReader();
+            MudarComando(comando);
+             return command.ExecuteReader();
         }
 
     }
