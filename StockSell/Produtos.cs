@@ -25,12 +25,11 @@ namespace StockSell
         {
             if (ChecarDados())
             {
-                controle.AbrirConexao();
                 controle.MudarComando("insert into produtos " +
                     "(nomeProduto, qtd) " +
                     "values (" + textBoxNome.Text + ", " + Convert.ToInt64(maskedTextBoxQuatidade.Text) + ");");
-                try { controle.ExecultarFechar(); }
-                catch (Exception ex) { controle.FecharConexao(); MessageBox.Show("Erro ao cadastrar" + ex); };
+                try { controle.Execultar(); }
+                catch (Exception ex) { MessageBox.Show("Erro ao cadastrar" + ex); };
 
             }
            

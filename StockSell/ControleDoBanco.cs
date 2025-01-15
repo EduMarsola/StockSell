@@ -23,10 +23,7 @@ namespace StockSell
         public void FecharConexao() { conn.Close(); }
         public void Execultar()
         {
-            command.ExecuteNonQuery();
-        }
-        public void ExecultarFechar()
-        {
+            conn.Open();
             command.ExecuteNonQuery();
             FecharConexao();
         }

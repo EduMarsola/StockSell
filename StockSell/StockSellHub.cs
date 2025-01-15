@@ -79,9 +79,8 @@ namespace StockSell
         {
             try
             {
-                controle.AbrirConexao();
-                controle.MudarComando("");
-                controle.ExecultarFechar();
+                controle.MudarComando("create table Cliente(\r\n            CPF varchar(11) not null unique,\r\n            NomeCompleto text,\r\n            DataNascimento date,\r\n            primary key(CPF)\r\n            );");
+                controle.Execultar();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
     
