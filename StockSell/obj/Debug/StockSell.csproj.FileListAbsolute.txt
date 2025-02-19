@@ -44,3 +44,5 @@ E:\Programs\StockSell\StockSell\bin\Debug\System.Runtime.CompilerServices.Unsafe
 E:\Programs\StockSell\StockSell\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\Programs\StockSell\StockSell\obj\Debug\StockSell.Produtos.resources
 E:\Programs\StockSell\StockSell\obj\Debug\StockSell.csproj.Up2Date
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.Prod.resources
+E:\Programs\StockSell\StockSell\obj\Debug\StockSell.ProdExpose.resources

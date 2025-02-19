@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|E:\\Programs\\StockSell\\stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\prodexpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\prodexpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\prodexpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\prodexpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\stocksellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\prod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\prod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|e:\\programs\\stocksell\\stocksell\\prod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77293C55-5FB5-44F8-92EB-0157EA48CB3E}|StockSell\\StockSell.csproj|solutionrelative:stocksell\\prod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdExpose.cs",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\ProdExpose.cs",
+              "RelativeDocumentMoniker": "StockSell\\ProdExpose.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\ProdExpose.cs",
+              "RelativeToolTip": "StockSell\\ProdExpose.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:40:45.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdExpose.cs [Design]",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\ProdExpose.cs",
+              "RelativeDocumentMoniker": "StockSell\\ProdExpose.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\ProdExpose.cs [Design]",
+              "RelativeToolTip": "StockSell\\ProdExpose.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:40:17.285Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Prod.cs",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Prod.cs",
+              "RelativeDocumentMoniker": "StockSell\\Prod.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\Prod.cs",
+              "RelativeToolTip": "StockSell\\Prod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:38:15.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Prod.cs [Design]",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\Prod.cs",
+              "RelativeDocumentMoniker": "StockSell\\Prod.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\Prod.cs [Design]",
+              "RelativeToolTip": "StockSell\\Prod.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:13:13.609Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StockSellHub.cs [Design]",
+              "DocumentMoniker": "E:\\Programs\\StockSell\\StockSell\\StockSellHub.cs",
+              "RelativeDocumentMoniker": "StockSell\\StockSellHub.cs",
+              "ToolTip": "E:\\Programs\\StockSell\\StockSell\\StockSellHub.cs [Design]",
+              "RelativeToolTip": "StockSell\\StockSellHub.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T00:11:10.333Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +106,7 @@
               "RelativeDocumentMoniker": "StockSell\\StockSellHub.cs",
               "ToolTip": "E:\\Programs\\StockSell\\StockSell\\StockSellHub.cs",
               "RelativeToolTip": "StockSell\\StockSellHub.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAFgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T01:17:55.715Z",
               "EditorCaption": ""

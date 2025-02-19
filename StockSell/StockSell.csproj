@@ -105,6 +105,18 @@
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="ControleDoBanco.cs" />
+    <Compile Include="Prod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prod.Designer.cs">
+      <DependentUpon>Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdExpose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdExpose.Designer.cs">
+      <DependentUpon>ProdExpose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Produtos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </Compile>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod.resx">
+      <DependentUpon>Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdExpose.resx">
+      <DependentUpon>ProdExpose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>
@@ -159,6 +177,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

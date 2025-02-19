@@ -77,13 +77,16 @@ namespace StockSell
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
             try
             {
                 controle.MudarComando("create table Cliente(\r\n            CPF varchar(11) not null unique,\r\n            NomeCompleto text,\r\n            DataNascimento date,\r\n            primary key(CPF)\r\n            );");
                 controle.Execultar();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
-    
+            */
+            ProdExpose pe = new ProdExpose();
+            pe.Show();
    
         }
 
